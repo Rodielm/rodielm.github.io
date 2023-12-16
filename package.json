@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run build:css && astro build",
+    "build:css": "npx siimple -c ./siimple.config.js -o ./siimple.css",
     "preview": "astro preview",
     "astro": "astro"
   },
