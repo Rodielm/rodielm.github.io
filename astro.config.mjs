@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 const SERVER_PORT = 4321
 
 const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
-const LIVE_URL = "https://rodielmj.github.io"
+const LIVE_URL = "https://rodielm.github.io"
 
 const _npmScript = process.env.npm_lifecycle_script || "";
 
