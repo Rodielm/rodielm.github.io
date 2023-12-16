@@ -1,0 +1,247 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import WorkHistory from "../components/WorkHistory.astro";
+const title = "Resume";
+
+const workHistory = [
+	{
+		company: "Zetta Genomics Europe S.L",
+		position: "Web Application Developer",
+		roles: ["Front End Development", "FrontEnd Tester"],
+		period: "Aug 2021 - Present",
+		skills: ["Lit", "Bootstrap", "Cypress"],
+		project: [
+			{
+				name: "Interative Variant Analysis (IVA)",
+				description: `
+				Soy parte del equipo de desarrollo frontend,
+				contribuyendo en el proceso de diseño,
+				implementación y pruebas unitarias del producto
+				Interactive Variant Analysis en la plataforma
+				XetaBase. Mi enfoque se dirige hacia la mejora
+				constante de la interfaz de usuario, asegurando
+				tanto su funcionalidad óptima como una experiencia
+				de usuario excepcional en este proyecto dentro de
+				XetaBase.
+				`,
+			},
+		],
+	},
+	{
+		company: "Kanteron Systems S.L.U",
+		position: "Software Developer",
+		period: "Jan 2020 - Feb 2021",
+		roles: ["FullStack Development", "Analysis Data"],
+		skills: ["Java", "Python", "React", "SQL", "Docker"],
+		project: [
+			{
+				name: "TMIS",
+				description: `
+				Tuve el privilegio de formar parte de un equipo integral de desarrollo, abarcando tanto el frontend como el
+				backend, en el cual desempeñé un papel activo en el diseño, implementación y proceso de 'dockerización'
+				del producto TMIS. Esta experiencia me permitió colaborar en diversos aspectos del proyecto, desde la
+				concepción de la interfaz de usuario hasta la robusta arquitectura del sistema, incluyendo su
+				contenedorización a través de Docker, todo ello en un esfuerzo conjunto por llevar a cabo un exitoso
+				despliegue del TMIS.
+				`,
+			},
+		],
+	},
+	{
+		company: "Laberit (Anteriormente Alfatec)",
+		position: "Web Application Developer",
+		period: "Apr 2019 - Jul 2019",
+		roles: ["Backend Developer", "Testing QA"],
+		skills: ["Java", "Spring", "Hibernate", "SQL"],
+		project: [
+			{
+				name: "Historia Clinica Oncologica",
+				description: `
+				Fui miembro del equipo de desarrollo backend encargado de crear el Módulo de Historia Clínica Oncológica
+				para la aplicación SINA. Este módulo fue diseñado para recopilar minuciosamente datos exhaustivos sobre
+				el estado de salud y el proceso de atención del paciente oncológico. Su objetivo principal era crear una
+				visión integral de su historial médico, mejorando así la comunicación interdisciplinaria y, en última
+				instancia, la calidad de la atención médica. Es importante destacar que esta historia clínica estaría
+				estrechamente vinculada a cada paciente, independientemente de la etapa específica de su tratamiento.
+				`,
+			},
+		],
+	},
+	{
+		company: "Concentra - Claro Dominicana",
+		position: "Web Application Developer",
+		period: "Jul 2017 - Ago 2018",
+		roles: ["FullStack Developer", "Analysis Data"],
+		skills: ["Java", "Hibernate", "Wicket", "SQL"],
+		project: [
+			{
+				name: "Formularios Digitales",
+				description: `
+				Esta aplicación web ofrece la conveniencia de completar automáticamente diversos formularios según el
+				tipo de transacción, boletos u órdenes, todo a través de la identificación del cliente mediante su cédula o
+				pasaporte, o del RNC de la empresa.
+				`,
+			},
+		],
+	},
+	{
+		company: "IDAC (Instituto Dominicano de Aviación Civil)",
+		position: "Web Application Developer",
+		period: "Dic. 2015 - Jun. 2017",
+		roles: [
+			"Development of web and mobile apps",
+			"Maintenance & Technical support for web applications",
+		],
+		skills: [
+			"Java",
+			"Hibernate",
+			"JSF",
+			"Primeface",
+			"Ionic",
+			"Spring",
+			"SQL",
+		],
+		project: [
+			{
+				name: "Galería de directores",
+				description: `
+				Se trata de una aplicación web diseñada tanto para empleados como para el público en general, que permite
+				explorar las historias de los exdirectores del IDAC.
+				`,
+			},
+			{
+				name: "Portal Siaga",
+				description: `
+				Se trata de una aplicación web que permite organizar y mostrar de manera ordenada todas las aplicaciones
+				web existentes de la empresa.
+				`,
+			},
+			{
+				name: "Consultas de Expedientes (Web, Android & Ios)",
+				description: `
+				Se trata de una aplicación web y móvil disponible tanto en Android como en iOS, diseñada para el público
+				en general. A través de esta aplicación, los usuarios pueden acceder a información sobre pilotos a través de
+				su licencia y sobre aeronaves a través de su matrícula.
+				`,
+			},
+			{
+				name: "Gestión de Agenda",
+				description: `
+				Se trata de una aplicación web que brinda a los empleados la capacidad de planificar y gestionar
+				actividades, eventos y reuniones que forman parte de la dinámica de la empresa.
+				`,
+			},
+			{
+				name: "Portal de Empleados",
+				description: `
+				Se trata de una aplicación web que se integra con varios componentes del sistema en su totalidad. A través
+				de ella, los empleados pueden acceder a información personal, incluyendo el rol que desempeñan en la
+				empresa, con la particularidad de que esta información solo es visible para el propio usuario.
+				`,
+			},
+		],
+	},
+];
+---
+
+<BaseLayout pageTitle={title}>
+	<h1>Rodiel Martinez Jimenez</h1>
+	<hr class="has-mb-0" />
+	<div class="is-flex has-direction-row has-weight-bold">
+		<div class="is-flex has-items-center has-pl-2 has-pr-2 has-pt-1">
+			<i class="si-briefcase has-pr-1" style="font-size: 24px;"></i>
+			 Ing. de Software
+		</div>
+		<!-- <div class="is-flex has-items-center has-pl-2 has-pr-2">
+			<i class="si-globe has-pr-1" style="font-size: 24px;"></i>
+			 rodiel.dev
+		</div>
+		<div class="is-flex has-items-center has-pl-2 has-pr-2">
+			<i class="si-envelope has-pr-1" style="font-size: 24px;"></i>
+			 hello@rodiel.dev
+		</div> -->
+	</div>
+	<!-- Info About Me -->
+	<div class="has-p-2 has-mb-3">
+		He adquirido habilidades valiosas para el ámbito profesional, utilizando
+		diversas herramientas tecnológicas en Backend, Frontend y diversas
+		prácticas de arquitectura de desarrollo. Me motiva la exploración de
+		nuevas tecnologías, el trabajo en equipo, compartir conocimientos sobre
+		desarrollo de software y promover las mejores prácticas en la gestión de
+		software. Poseo capacidad de adaptación y un fuerte deseo de profundizar
+		mis conocimientos en diferentes áreas dentro de la industria del
+		software.
+	</div>
+
+	<div>
+		<div class="is-flex has-items-center">
+			<i class="si-briefcase has-pr-1" style="font-size: 36px;"></i>
+			<div class="has-size-4 has-weight-bold has-pb-0">
+				Experiencia Laboral
+			</div>
+		</div>
+		<hr class="has-mt-0" />
+		<WorkHistory data={workHistory} />
+	</div>
+
+	<div>
+		<div class="is-flex has-items-center">
+			<i class="si-book has-pr-1" style="font-size: 36px;"></i>
+			<div class="has-size-4 has-weight-bold has-pb-0">Educación</div>
+		</div>
+		<hr class="has-mt-0" />
+		<ul>
+			<li>
+				Doctorado en Tecnología de la Información, Comunicaciones y
+				Computación (Orientado a la Bioinformatica) - (2019-En proceso)
+			</li>
+			<li>
+				Master Tecnologia Web, Computación en la nube y aplicaciones
+				móviles - Universidad de valencia - UV (2018-2019)
+			</li>
+			<li>Ingeniero de Software - UNAPEC (2013-2017)</li>
+		</ul>
+	</div>
+
+	<div>
+		<div class="is-flex has-items-center">
+			<i class="si-code has-pr-1" style="font-size: 36px;"></i>
+			<div class="has-size-4 has-weight-bold has-pb-0">Habilidades</div>
+		</div>
+		<hr class="has-mt-0" />
+		<div class="has-weight-bold has-mb-3">
+			Language Programming:
+			<span class="badge has-mr-1">Java</span>
+			<span class="badge has-mr-1">Python</span>
+			<span class="badge has-mr-1">JavaScript</span>
+			<span class="badge has-mr-1">Dart</span>
+		</div>
+		<div class="has-weight-bold has-mb-3">
+			Backend:
+			<span class="badge has-mr-1">JSF</span>
+			<span class="badge has-mr-1">Wicket</span>
+			<span class="badge has-mr-1">Spring & Spring Boot</span>
+			<span class="badge has-mr-1">FastApi</span>
+		</div>
+		<div class="has-weight-bold has-mb-3">
+			Frontend:
+			<span class="badge has-mr-1">Lit</span>
+			<span class="badge has-mr-1">React</span>
+			<span class="badge has-mr-1">Angular</span>
+			<span class="badge has-mr-1">Ionic</span>
+		</div>
+		<div class="has-weight-bold has-mb-3">
+			Mobile:
+			<span class="badge has-mr-1">Flutter</span>
+		</div>
+		<div class="has-weight-bold has-mb-3">
+			DevOps:
+			<span class="badge has-mr-1">Docker & Docker Compose</span>
+		</div>
+		<div class="has-weight-bold has-mb-3">
+			Database:
+			<span class="badge has-mr-1">SQL</span>
+			<span class="badge has-mr-1">MongoDB</span>
+		</div>
+	</div>
+</BaseLayout>
