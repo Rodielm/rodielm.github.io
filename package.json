@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "npm run build:css && astro build",
-    "build:css": "npx siimple -c ./siimple.config.js -o ./siimple.css",
+    "build:css": "npx siimple -c ./siimple.config.js -o ./src/styles/siimple.css",
     "preview": "astro preview",
     "astro": "astro"
   },
