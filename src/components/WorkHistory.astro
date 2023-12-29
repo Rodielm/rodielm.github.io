@@ -5,9 +5,9 @@ const { data } = Astro.props;
 {
     data.map((work) => (
         <div class="mb-3">
-            <div class="text-md font-bold">{work.company}</div>
-            <div class="text-sm">{work.position}</div>
-            <div class="text-xs text-gray-400 font-bold">
+            <div class="text-xl font-bold">{work.company}</div>
+            <div class="text-lg">{work.position}</div>
+            <div class="text-sm text-gray-400 font-bold">
                 {work.period}
             </div>
             <ul class="mb-3">
