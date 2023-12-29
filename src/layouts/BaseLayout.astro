@@ -1,5 +1,6 @@
 ---
-import "../styles/siimple.css";
+// import "../styles/siimple.css";
+import "../styles/low.css";
 import "siimple-icons/siimple-icons.css";
 const { pageTitle } = Astro.props;
 ---
@@ -8,10 +9,12 @@ const { pageTitle } = Astro.props;
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <link
+        <!-- <link
             href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700"
             rel="stylesheet"
-        />
+        /> -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@700;900&amp;display=swap">
         <!-- <link
             rel="stylesheet"
             href="../../node_modules/siimple-icons/siimple-icons.css"
@@ -20,11 +23,11 @@ const { pageTitle } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{pageTitle}</title>
     </head>
-    <body>
-        <div class="container">
+    <body class="bg-white m-0 p-0 font-inter text-gray-900 leading-normal">
+        <div class="my-16 mx-auto" style="max-width: 30cm;">
             <!-- <h1>{pageTitle}</h1> -->
             <slot />
         </div>
-        <footer class="has-p-6"></footer>
+        <footer class="p-6"></footer>
     </body>
 </html>
