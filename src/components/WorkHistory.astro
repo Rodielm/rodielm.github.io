@@ -4,31 +4,31 @@ const { data } = Astro.props;
 
 {
     data.map((work) => (
-        <div class="has-mb-3">
-            <div class="has-size-3 has-weight-bold">{work.company}</div>
-            <div class="has-size-2">{work.position}</div>
-            <div class="has-size-0 has-weight-bold has-text-muted">
+        <div class="mb-3">
+            <div class="text-xl font-bold">{work.company}</div>
+            <div class="text-lg">{work.position}</div>
+            <div class="text-sm text-gray-400 font-bold">
                 {work.period}
             </div>
-            <ul>
+            <ul class="mb-3">
                 {work.roles.map((rol) => (
-                    <li>{rol}</li>
+                    <li class="ml-8">{rol}</li>
                 ))}
             </ul>
-            <div class="has-mb-3">
+            <div class="flex mb-3 gap-1">
                 {work.skills.map((skill) => (
-                    <span class="badge is-secondary has-mr-1">{skill}</span>
+                    <span class="px-3 py-1 rounded-full bg-gray-200 text-xs font-bold">{skill}</span>
                 ))}
             </div>
             {work.project?.length > 0 && (
-                <div class="has-mb-3 has-p-3 has-bg-muted is-rounded has-text-dark">
+                <div class="p-6 bg-gray-200 rounded-md">
                     <ul>
                         {work.project?.map((project) => (
-                            <li class="has-mb-3">
-                                <div class="has-weight-bold is-italic is-underlined">
+                            <li class="mb-3">
+                                <div class="font-bold italic underlined">
                                     {project.name}
                                 </div>
-                                <div class="has-text-justified">
+                                <div class="text-justify">
                                     {project.description}
                                 </div>
                             </li>

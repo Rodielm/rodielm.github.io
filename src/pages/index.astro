@@ -145,14 +145,16 @@ const workHistory = [
 ---
 
 <BaseLayout pageTitle={title}>
-	<h1>Rodiel Martinez Jimenez</h1>
-	<hr class="has-mb-0" />
-	<div class="is-flex has-direction-row has-weight-bold">
-		<div class="is-flex has-items-center has-pl-2 has-pr-2 has-pt-1">
-			<i class="si-briefcase has-pr-1" style="font-size: 24px;"></i>
+	<h1 class="font-black text-6xl mb-2">
+		<span>Rodiel Martinez Jimenez</span>
+	</h1>
+	<hr class="border-t-2 border border-gray-300 mb-4" />
+	<div class="flex flex-row font-bold">
+		<div class="flex items-center pl-2 pr-2 pt-1">
+			<i class="si-briefcase pr-1 text-3xl"></i>
 			 Ing. de Software
 		</div>
-		<!-- <div class="is-flex has-items-center has-pl-2 has-pr-2">
+		<!-- <div class="is-flex items-center pl-2 has-pr-2">
 			<i class="si-globe has-pr-1" style="font-size: 24px;"></i>
 			 rodiel.dev
 		</div>
@@ -162,7 +164,7 @@ const workHistory = [
 		</div> -->
 	</div>
 	<!-- Info About Me -->
-	<div class="has-p-2 has-mb-3">
+	<div class="p-2 mb-3 text-justify">
 		He adquirido habilidades valiosas para el ámbito profesional, utilizando
 		diversas herramientas tecnológicas en Backend, Frontend y diversas
 		prácticas de arquitectura de desarrollo. Me motiva la exploración de
@@ -174,74 +176,75 @@ const workHistory = [
 	</div>
 
 	<div>
-		<div class="is-flex has-items-center">
-			<i class="si-briefcase has-pr-1" style="font-size: 36px;"></i>
-			<div class="has-size-4 has-weight-bold has-pb-0">
+		<div class="flex items-center">
+			<i class="si-briefcase pr-1 text-4xl"></i>
+			<div class="font-bold text-4xl">
 				Experiencia Laboral
 			</div>
 		</div>
-		<hr class="has-mt-0" />
+		<hr class="border-t-2 border border-gray-300 mb-4"/>
 		<WorkHistory data={workHistory} />
 	</div>
 
 	<div>
-		<div class="is-flex has-items-center">
-			<i class="si-book has-pr-1" style="font-size: 36px;"></i>
-			<div class="has-size-4 has-weight-bold has-pb-0">Educación</div>
+		<div class="flex items-center">
+			<i class="si-book pr-1 text-4xl"></i>
+			<div class="font-bold text-4xl">Educación</div>
 		</div>
-		<hr class="has-mt-0" />
-		<ul>
-			<li>
+		<hr class="border-t-2 border border-gray-300 mb-4"/>
+		<ul class="mb-3">
+			<li class="ml-8">
 				Doctorado en Tecnología de la Información, Comunicaciones y
 				Computación (Orientado a la Bioinformatica) - (2019-En proceso)
 			</li>
-			<li>
+			<li class="ml-8">
 				Master Tecnologia Web, Computación en la nube y aplicaciones
 				móviles - Universidad de valencia - UV (2018-2019)
 			</li>
-			<li>Ingeniero de Software - UNAPEC (2013-2017)</li>
+			<li class="ml-8">Ingeniero de Software - UNAPEC (2013-2017)</li>
 		</ul>
 	</div>
 
 	<div>
-		<div class="is-flex has-items-center">
-			<i class="si-code has-pr-1" style="font-size: 36px;"></i>
-			<div class="has-size-4 has-weight-bold has-pb-0">Habilidades</div>
+		<div class="flex items-center">
+			<i class="si-code pr-1 text-4xl"></i>
+			<div class="font-bold text-4xl">Habilidades</div>
 		</div>
-		<hr class="has-mt-0" />
-		<div class="has-weight-bold has-mb-3">
+		<hr class="border-t-2 border border-gray-300 mb-4"/>
+		<div class="font-bold mb-3">
 			Language Programming:
-			<span class="badge has-mr-1">Java</span>
-			<span class="badge has-mr-1">Python</span>
-			<span class="badge has-mr-1">JavaScript</span>
-			<span class="badge has-mr-1">Dart</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Java</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Python</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">JavaScript</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Dart</span>
 		</div>
-		<div class="has-weight-bold has-mb-3">
+		<div class="font-bold mb-3">
 			Backend:
-			<span class="badge has-mr-1">JSF</span>
-			<span class="badge has-mr-1">Wicket</span>
-			<span class="badge has-mr-1">Spring & Spring Boot</span>
-			<span class="badge has-mr-1">FastApi</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">JSF</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Wicket</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Spring</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">FastApi</span>
 		</div>
-		<div class="has-weight-bold has-mb-3">
+		<div class="font-bold mb-3">
 			Frontend:
-			<span class="badge has-mr-1">Lit</span>
-			<span class="badge has-mr-1">React</span>
-			<span class="badge has-mr-1">Angular</span>
-			<span class="badge has-mr-1">Ionic</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Lit</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">React</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Angular</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Ionic</span>
 		</div>
-		<div class="has-weight-bold has-mb-3">
+		<div class="font-bold mb-3">
 			Mobile:
-			<span class="badge has-mr-1">Flutter</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Flutter</span>
 		</div>
-		<div class="has-weight-bold has-mb-3">
+		<div class="font-bold mb-3">
 			DevOps:
-			<span class="badge has-mr-1">Docker & Docker Compose</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Docker</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">Docker Compose</span>
 		</div>
-		<div class="has-weight-bold has-mb-3">
+		<div class="font-bold mb-3">
 			Database:
-			<span class="badge has-mr-1">SQL</span>
-			<span class="badge has-mr-1">MongoDB</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">SQL</span>
+			<span class="px-3 py-1 rounded-full bg-gray-200 text-xs">MongoDB</span>
 		</div>
 	</div>
 </BaseLayout>

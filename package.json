@@ -1,7 +1,7 @@
 {
   "name": "portfolio_dev",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,8 +13,8 @@
   "dependencies": {
     "@siimple/preset-dark": "^0.3.1",
     "@siimple/preset-noir": "^0.3.1",
-    "astro": "^3.2.0",
-    "siimple": "^4.3.1",
+    "astro": "^4.0.7",
+    "lowcss": "^0.19.0",
     "siimple-icons": "^4.3.1"
   }
 }
