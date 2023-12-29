@@ -14,7 +14,7 @@
     "@siimple/preset-dark": "^0.3.1",
     "@siimple/preset-noir": "^0.3.1",
     "astro": "^4.0.7",
-    "siimple": "^4.3.1",
+    "lowcss": "^0.19.0",
     "siimple-icons": "^4.3.1"
   }
 }
